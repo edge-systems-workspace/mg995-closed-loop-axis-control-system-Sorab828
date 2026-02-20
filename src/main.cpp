@@ -15,3 +15,17 @@
 
 Servo myServo;
 
+/**
+ * @brief Arduino setup function.
+ *
+ * Initializes serial communication at 9600 baud, attaches the servo to pin 11,
+ * and prints an initialization message over Serial.
+ */
+void setup() {
+ Serial.begin(9600);
+
+ myServo.attach(11);
+
+ Serial.println("Servo initiate");
+}
+
